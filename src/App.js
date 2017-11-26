@@ -1,19 +1,25 @@
 import React, { Component } from 'react';
+import {render} from 'react-dom';
+import {applyMiddleware, createStore} from
+'redux';
+import logger from 'redux-logger';
 import logo from './logo.svg';
+import data from './components/PIZZA/pizza.json'
+import Layout from './components/Layout/Layout'
 import './App.css';
 
+
 class App extends Component {
+
   render() {
+    console.log(data);
+
+
+
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+     <Layout>
+       <p>test</p>
+       </Layout>
     );
   }
 }
