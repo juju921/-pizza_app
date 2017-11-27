@@ -12,13 +12,12 @@ import './App.css';
 class App extends Component {
 
   render() {
-    console.log(data);
-
+    let pizzas = data;
 
 
     return (
      <Layout>
-       <p>test</p>
+
        </Layout>
     );
   }
